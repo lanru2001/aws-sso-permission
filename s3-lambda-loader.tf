@@ -5,8 +5,8 @@ module "aws_sso_s3_bi_lambda_loader" {
 
 
   name               = "sso_s3_bi_lambda_loader"
-  description        = "S3 creditera-assets full access"
-  group_display_name = "AWS S3_BI_Lambda-Loader"
+  description        = "S3 customer files  full access"
+  group_display_name = "AWS S3_biz_Lambda-Loader"
   session_duration   = "PT1H"
 
   account_ids = [
@@ -40,14 +40,14 @@ data "aws_iam_policy_document" "sso_s3_bi_lambda_loader" {
     statement {
        effect =  "Allow"
        actions = [ "s3:ListBucket" ]
-       resources = [ "arn:aws:s3:::bi-lambda-loader"]
+       resources = [ "arn:aws:s3:::biz-lambda-loader"]
         }
     statement {
         effect = "Allow"
         actions = [ "s3:*" ]
         resources = [
-                "arn:aws:s3:::bi-lambda-loader",
-                "arn:aws:s3:::bi-lambda-loader/*"
+                "arn:aws:s3:::biz-lambda-loader",
+                "arn:aws:s3:::biz-lambda-loader/*"
             ]
         }
     
