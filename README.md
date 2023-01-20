@@ -1,5 +1,3 @@
-## AWS SSO (Single Sign On)
-
 ## AWS Single Sign-On (AWS SSO) is now AWS IAM Identity Center. 
 It is where you create, or connect, your workforce users once and centrally manage their access to multiple AWS accounts and applications. You can create user identities directly in IAM Identity Center, or you can connect your existing identity source, including Microsoft Active Directory and standards-based identity providers, such as Okta Universal Directory or Azure AD. You can choose to manage access just to AWS accounts, just to cloud applications, or to both. Your users can utilize their existing credentials for one-click access to their assigned AWS accounts, AWS applications, like Amazon SageMaker Studio, and other standards-based cloud applications, like Salesforce, Box, and Microsoft 365.
 
